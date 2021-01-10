@@ -1,14 +1,20 @@
 #pragma once
 #include "Robot.h"
-#include "Map.h"
 
-class Collector : public IRobot {
+
+
+class Collector : public Robot {
 private:
-    size_t apple_count;
-    size_t col_x;
-    size_t col_y;
-    Map* col_map;
+    Robot_Playground* map;
+    int col_x, col_y;
+    int apple_count;
 public:
-
+    Collector();
+    void collector_move(movement m);
+    void collector_scan(std::vector<cell> around);
+    void collector_grab();
+    int get_apple();
+    std::pair<int, int> get_coords_on_own_map();
+    Robot_Playground* get_map();
 };
 

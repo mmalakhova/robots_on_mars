@@ -1,13 +1,13 @@
 #pragma once
-#include "Map.h"
+#include "Main_Map.h"
 #include "Robot.h"
 #include "Mode.h"
 
 class Game {
 private:
-    Map* general_map;
-    IRobot* robots;
-    IMode mode;
+    Main_Map* general_map;
+    Robot* robots;
+    //IMode mode;
 public:
     Game();
     ~Game();

@@ -1,12 +1,12 @@
 #pragma once
-#include "Map.h"
+#include "Playground.h"
+#include <vector>
+#include <utility>
 
-class IRobot {
+class Robot {
 private:
-    Map* robot_map;
-    size_t _x;
-    size_t _y;
-public:
 
+public:
+	Robot();
 };
 
